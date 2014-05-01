@@ -50,7 +50,7 @@ var jobId = crontab.scheduleJob("* * * * *", function(){
 ```javascript
 var crontab = require('node-crontab');
 var jobId = crontab.scheduleJob("* * * * *", function(){
-    console.log("Hello " + this.a + "! It's been a minute, but this will be the only time I run.");
+    console.log("Hello world! It's been a minute, but this will be the only time I run.");
 }, null, null, false);
 ```
 
