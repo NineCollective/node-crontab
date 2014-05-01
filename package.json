@@ -1,19 +1,27 @@
 {
-  "name": "node-crontab",
-  "version": "0.0.1",
-  "description": "Crontab-based task scheduler for node.",
-  "main": "lib/crontab.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "cron",
-    "crontab",
-    "scheduler"
-  ],
-  "author": "NineCollective",
-  "license": "MIT",
-  "dependencies": {
-    "cron-parser": "~0.3.3"
-  }
+    "name": "node-crontab",
+    "version": "0.0.1",
+    "description": "Crontab-based task scheduler for node.",
+    "main": "lib/crontab.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "cron",
+        "crontab",
+        "scheduler"
+    ],
+    "author": "NineCollective",
+    "license": "MIT",
+    "dependencies": {
+        "cron-parser": "~0.3.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/NineCollective/node-crontab.git"
+    },
+    "bugs": {
+        "url": "https://github.com/NineCollective/node-crontab/issues"
+    },
+    "homepage": "https://github.com/NineCollective/node-crontab"
 }
