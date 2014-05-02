@@ -1,10 +1,10 @@
 {
     "name": "node-crontab",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Crontab-based task scheduler for node.",
     "main": "lib/crontab.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha test/* --reporter spec"
     },
     "keywords": [
         "cron",
@@ -15,6 +15,10 @@
     "license": "MIT",
     "dependencies": {
         "cron-parser": "~0.3.3"
+    },
+    "devDependencies": {
+        "mocha": "~1.12",
+        "expect.js": "~0.2.0"
     },
     "repository": {
         "type": "git",

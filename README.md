@@ -95,7 +95,7 @@ bool crontab.**cancelJob**(jobId)
 
 **To Do**
 
-  -  Create tests. Not entirely sure how to test this project, but I'm sure something could be done.
+  -  Create better tests. I've created basic tests, but they're not as good as they could be, probably.
 
 
 **Wrap-up**
