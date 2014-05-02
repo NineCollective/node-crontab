@@ -14,7 +14,16 @@ describe('Crontab', function(){
     it('creates long-term task', function(done){
         //This test schedules a function for yesterday of this month, which should make the difference be greater than MAX_SET_TIMEOUT, meaning this should be scheduled in the delayed queue
         var date = new Date();
-        var yesterdayOfNextYear = "* * " + (date.getDate()-1) + " " + (date.getMonth()+1) + " *";
+        var day = date.getDate()-1;
+        var month = date.getMonth()+1;
+        if(day === 0){
+            day = 28;
+            month -= 1;
+        }
+        if(month === 0){
+            month = 12;
+        }
+        var yesterdayOfNextYear = "* * " + (day) + " " + (month) + " *";
         var jobId = crontab.scheduleJob(yesterdayOfNextYear, function(){
             console.log("Hello world");
         });
