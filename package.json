@@ -1,6 +1,6 @@
 {
     "name": "node-crontab",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Crontab-based task scheduler for node.",
     "main": "lib/crontab.js",
     "scripts": {

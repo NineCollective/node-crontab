@@ -12,7 +12,7 @@ describe('Crontab', function(){
     });
 
     it('creates long-term task', function(done){
-        //This test schedules a function for yesterday of this month, which should make the difference be greater than MAX_SET_TIMEOUT, meaning this should be scheduled in the delayed queue
+        //This test schedules a function for yesterday of this month (or the 28th of the previous month if today is the first), which should make the difference be greater than MAX_SET_TIMEOUT, meaning this should be scheduled in the delayed queue
         var date = new Date();
         var day = date.getDate()-1;
         var month = date.getMonth()+1;
