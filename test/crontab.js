@@ -42,6 +42,19 @@ describe('Crontab', function(){
         done();
     });
 
+    it('should break with invalid cron', function(done){
+        //Trying to schedule a task with an invalid cron time, cron-parser is actually responsible for the exception we're receiving
+        try {
+            crontab.scheduleJob("this should fail", function(){
+                console.log("Should never make it here");
+            });
+            done("Didn't throw an exception");
+        }catch(e){
+            expect(e.message).to.be("Invalid characters, got value: this");
+            done();
+        }
+    });
+
     it('fails to cancel invalid task id', function(done){
         //Tries to cancel a task that shouldn't exist.
         var result = crontab.cancelJob((new Date()).getTime());
