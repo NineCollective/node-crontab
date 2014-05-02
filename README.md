@@ -1,10 +1,10 @@
 # node-crontab
 
-A task scheduler for node that uses the crontab syntax  
+A task scheduler for node that uses the crontab syntax
 <a href="https://travis-ci.org/NineCollective/node-crontab"><img src="https://travis-ci.org/NineCollective/node-crontab.svg?branch=master" alt="Travis CI build status" /></a>
 ***
 
-**Why node-crontab?**
+**Why node-crontab?**  
 Need to schedule tasks in node and you already have the cron syntax? Then you need node-crontab! We take care of the task scheduling and timing and all you have to do is tell us what to do!
 
 With node-crontab, you can pass in your callback, arguments for the callback, and even the context of the callback function! We also take care of times that are normally too long for setInterval/setTimeout to handle automatically!
