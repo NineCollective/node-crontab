@@ -1,6 +1,7 @@
 # node-crontab
 
-A task scheduler for node that uses the crontab syntax
+A task scheduler for node that uses the crontab syntax  
+<a href="https://travis-ci.org/NineCollective/node-crontab"><img src="https://travis-ci.org/NineCollective/node-crontab.svg?branch=master" alt="Travis CI build status" /></a>
 ***
 
 **Why node-crontab?**
